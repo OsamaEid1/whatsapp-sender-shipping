@@ -134,6 +134,9 @@
             const url = `https://wa.me/2${phone}?text=${encodeURIComponent(message)}`;
 
             window.open(url, "_blank");
+
+            // reset form after submission
+            document.getElementById("whatsappForm").reset();
         });
     </script>
 
@@ -141,4 +144,5 @@
 
 
 </html>
+
 
